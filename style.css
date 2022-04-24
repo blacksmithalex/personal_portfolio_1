@@ -366,3 +366,28 @@ button#open_pop_up{
 .fa-globe {
   margin-right: 5px;
 }
+
+
+/* About Page CSS*/
+.about-page-container{
+  margin: 0px 115px 0px 115px;
+  background: red;
+  overflow: auto;
+}
+
+.about-page-photos{
+   display: inline-block;
+}
+.main-photo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+}
+
+.left-photo img{
+  float: left;
+}
+
+.right-photo img{
+  float: right;
+}
