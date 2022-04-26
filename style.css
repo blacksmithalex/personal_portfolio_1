@@ -391,3 +391,17 @@ button#open_pop_up{
 .right-photo img{
   float: right;
 }
+
+/* Projects Page CSS*/
+.projects-page-container{
+
+}
+
+.name-year{
+  float:left;
+  margin-right: 20px;
+}
+.extra-text{
+  float: left;
+  width: 50%;
+}
