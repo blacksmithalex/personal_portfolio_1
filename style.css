@@ -382,8 +382,14 @@ button#open_pop_up{
 
 /* About Page CSS*/
 .about-page-container{
+  display: none;
+  transform: scale(0);
+  transition: .4s ease-in-out;
   margin: 0px 115px 0px 115px;
-
+}
+.about-page-container.active{
+  display: inherit;
+  transform: scale(100%);
 }
 
 .about-page-photos{

@@ -39,3 +39,18 @@ closeProjectsPage.addEventListener('click', () => {
     projects_page.classList.remove('active');
 		closeMainPage.classList.remove('nonactive')
 })
+
+const openAboutPage = document.getElementById('open_about_page')
+const aboutPage = document.getElementById('about_page')
+const closeAboutPage = document.getElementById('about-page-close')
+
+openAboutPage.addEventListener('click', function(e){
+    e.preventDefault();
+    aboutPage.classList.add('active');
+		closeMainPage.classList.add('nonactive')
+})
+
+closeAboutPage.addEventListener('click', () => {
+    aboutPage.classList.remove('active');
+		closeMainPage.classList.remove('nonactive')
+})
