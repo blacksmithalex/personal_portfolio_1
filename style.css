@@ -263,6 +263,16 @@ button#open_pop_up{
   float: right;
 }
 
+.all-information-wrapper {
+
+}
+
+.all-information-wrapper.nonactive {
+  display: none;
+  transform: translateY(0%) scale(0%);
+  transition: .4s ease-in-out;
+}
+
 
 
 .pop_up {
@@ -429,7 +439,14 @@ button#open_pop_up{
 
 /* Projects Page CSS*/
 .projects-page-container{
+  display: none;
+  transform: scale(0);
+  transition: .4s ease-in-out;
+}
 
+.projects-page-container.active{
+  display: inherit;
+  transform: scale(100%);
 }
 
 .name-year{
@@ -452,4 +469,9 @@ button#open_pop_up{
   background: #BFAEE5;
   box-shadow: 0px 2px 0px 0px #9747FF;
   font-size: 15px;
+}
+
+.projects-page-close{
+  position: absolute;
+  right: 0px;
 }

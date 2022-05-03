@@ -24,3 +24,18 @@ openPopUp.addEventListener('click', function(e){
 closePopUp.addEventListener('click', () => {
     popUp.classList.remove('active');
 })
+
+const openProjectsPage = document.getElementById('open_projects_page')
+const projectsPage = document.getElementById('projects_page')
+const closeMainPage = document.getElementById('open_main_page')
+const closeProjectsPage = document.getElementById('projects-page-close')
+openProjectsPage.addEventListener('click', function(e){
+    e.preventDefault();
+    projects_page.classList.add('active');
+		closeMainPage.classList.add('nonactive')
+})
+
+closeProjectsPage.addEventListener('click', () => {
+    projects_page.classList.remove('active');
+		closeMainPage.classList.remove('nonactive')
+})
