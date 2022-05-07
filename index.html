@@ -28,12 +28,12 @@
                       <a class="social">VK</a>
                       <a class="social">GitHub</a>
                     </div>
-                    <div class="phone"><h2><i class="fa-solid fa-phone"></i>+7(977)865-08-51</h2></div>
-                    <form action="">
+                    <div class="phone"><a href="tel:+79778650851"><h2><i class="fa-solid fa-phone"></i>+7(977)865-08-51</h2></a></div>
+                    <form action="sendmail.php" method = "POST">
                         <input type="text" placeholder="name">
-                        <input type="text" placeholder="email">
+                        <input type="email" placeholder="email" maxlength="50" required>
                         <input type="tel" placeholder="phone">
-                        <div class = "message"><input type="text" placeholder="message"></div>
+                        <div class = "message"><textarea name = "message" placeholder="message" maxlength = "300" required></textarea></div>
                         <button><h2>Confirm Sending</h2></button>
                     </form>
                     <div class="pop_up_close" id="pop_up_close"><i class="fa-solid fa-xmark"></i></div>
