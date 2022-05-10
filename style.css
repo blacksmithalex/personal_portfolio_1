@@ -253,8 +253,7 @@ button:hover {
 }
 
 .mini-right-column{
-  float: right;
-  margin-right: 30%;
+  float: left;
 }
 
 .social-line{
@@ -410,7 +409,6 @@ button:hover {
   display: none;
   transform: scale(0);
   transition: .4s ease-in-out;
-  margin: 0px 115px 0px 115px;
 }
 .about-page-container.active{
   display: inherit;
@@ -512,9 +510,23 @@ button:hover {
   right: 0px;
 }
 
+@media screen and (max-width: 425px){
+  .photo-info{
+    display: none;
+  }
+  .contact{
+    width: 100%;
+
+  }
+  .label{
+    float: right;
+    margin-right: 2%;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
-    background:red;
+    /*background:red;*/
   }
   .main-container{
       padding: 10px 30px 10px 30px;
@@ -527,6 +539,36 @@ button:hover {
     width: 100%;
   }
   .right-column {
+    width: 100%;
+  }
+  .extra-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .project-action{
+    float: left;
+  }
+  .left-photo {
+    display: none;
+  }
+  .right-photo {
+    display: none;
+  }
+  .main-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px)  and (min-width: 600px){
+  .main-container{
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mini-right-column {
+    float: left;
     width: 100%;
   }
 }
