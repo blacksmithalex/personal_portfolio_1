@@ -57,6 +57,10 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+span {
+  color: #545454;
+  text-decoration: underline;
+}
 
 
 .main-container{
@@ -75,6 +79,7 @@ a {
 .header {
   overflow: auto;
 }
+
 
 .contact {
   width: 50%;
@@ -137,6 +142,10 @@ a {
   z-index:1;
 }
 
+.fa-phone {
+  color: #545454;
+}
+
 .photo-info{
   width: 50%;
   float: left;
@@ -163,6 +172,7 @@ button {
   font-size: 20px;
   font-weight: bold;
   color: var(--button-text-color);
+  transition: 0.4s;
 }
 
 button#open_pop_up{
@@ -253,20 +263,22 @@ button:hover {
 }
 
 .mini-right-column{
-  float: left;
+  float: right;
+  margin-right: 50px;
 }
 
 .social-line{
   overflow: auto;
+  color: red;
 }
 
 .social{
   margin-right: 15px;
   text-decoration: underline;
+  color: red;
 }
 
 .footer{
-
 }
 
 .footer-left{
@@ -289,7 +301,7 @@ button:hover {
 
 
 .pop_up {
-
+    color: #545454;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -307,7 +319,7 @@ button:hover {
 }
 
 .pop_up_container{
-
+    color: #545454;
     display: flex;
     width: 100%;
     height: 100%;
@@ -325,6 +337,7 @@ button:hover {
     position: relative;
 }
 .pop_up_inner_border{
+    color: #545454;
     width: 410px;
     height: 525px;
     border: 1px solid #EFEFEF;
@@ -333,6 +346,7 @@ button:hover {
 }
 
 .pop_up_body p {
+    color: #545454;
     margin-top: 10px;
 }
 
@@ -381,7 +395,8 @@ button:hover {
 
 .pop_up_body h1 {
   color: #545454;
-  margin-top: 40px;
+  margin-top: 25px;
+  color: #545454;
 }
 
 .pop_up_close {
@@ -393,22 +408,25 @@ button:hover {
 }
 .pop_up_body .phone {
   margin-top: 15px;
+  color: #545454;
 }
 
 .pop_up_body .social {
   float: center;
+  color: #545454;
 }
 
 .fa-globe {
   margin-right: 5px;
 }
-
+.phone h1 {
+  color: #545454;
+}
 
 /* About Page CSS*/
 .about-page-container{
   display: none;
   transform: scale(0);
-  transition: .4s ease-in-out;
 }
 .about-page-container.active{
   display: inherit;
@@ -420,7 +438,7 @@ button:hover {
 }
 
 
-.left-photo img{
+.left-photo {
   border-radius: 15px;
   border: 1px solid var(--extra-elements-color);
   position: relative;
@@ -429,10 +447,9 @@ button:hover {
   width: 30%;
   margin-right: 1%;
    float: left;
-   z-index: 1;
 }
 
-.right-photo img{
+.right-photo {
   margin-top: 5%;
   border-radius: 15px;
   padding: 10px;
@@ -440,11 +457,10 @@ button:hover {
   position: relative;
   float: right;
   width: 30%;
-  z-index: 1;
   margin-left: 1%;
 }
 
-.main-photo img{
+.main-photo {
   border-radius: 15px;
   border: 1px solid var(--extra-elements-color);
   padding: 10px;
@@ -520,7 +536,10 @@ button:hover {
   }
   .label{
     float: right;
-    margin-right: 2%;
+    margin-right: 5px;
+  }
+  .about-page-text p{
+    font-size: 15px;
   }
 }
 
@@ -555,12 +574,18 @@ button:hover {
   .right-photo {
     display: none;
   }
-  .main-photo {
-    width: 100%;
+
+  .about-page-photos {
+
+  }
+  .main-photo{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
   }
 }
 
-@media screen and (max-width: 1000px)  and (min-width: 600px){
+@media screen and (max-width: 1100px)  and (min-width: 600px){
   .main-container{
     padding: 20px 50px 20px 50px;
   }
@@ -571,4 +596,20 @@ button:hover {
     float: left;
     width: 100%;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .mini-right-column {
+    margin-right: 200px;
+  }
+   p, li, a{
+     font-size: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .about-page-photos{
+    padding: 0px 150px 0px 150px;
+  }
+
 }
