@@ -598,7 +598,7 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1600px) {
   .mini-right-column {
     margin-right: 200px;
   }
