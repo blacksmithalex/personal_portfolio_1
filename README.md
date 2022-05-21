@@ -1,5 +1,9 @@
 # Портфолио 1
 
+![Image alt](https://github.com/blacsmithalex/personal_portfolio_1/raw/main/preview/preview.png)
+
+
+
 Обновление: добавлено открытие в форме поп-апов страниц Projects и About
 
 ## Задачи:
