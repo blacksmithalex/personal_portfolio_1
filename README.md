@@ -3,6 +3,7 @@
 ![Image alt](https://github.com/blacsmithalex/personal_portfolio_1/raw/main/preview/preview.png)
 
 
+![Иллюстрация к проекту](https://github.com/jon/coolproject/raw/master/image/image.png)
 
 Обновление: добавлено открытие в форме поп-апов страниц Projects и About
 
